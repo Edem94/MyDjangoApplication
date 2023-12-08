@@ -1,4 +1,4 @@
-# MyDjangoApplication
+# My Django Application
 My new websites created using Django Framework
 
 Mysite project contains shopapp and blogapp applications. Shopapp describes online shopping with products and orders made by users. Blogapp is application for blogging containing articles and all needed information for them.
