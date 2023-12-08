@@ -6,8 +6,6 @@ from django.urls import reverse, reverse_lazy
 
 
 class ArticlesListView(ListView):
-    # template_name = "blogapp/article_list.html"
-    # context_object_name = "articles"
     queryset = (
         Article.objects
         .select_related("author", "category")
@@ -43,6 +41,3 @@ class LatestArticlesFeed(Feed):
     def item_description(self, item: Article):
         return item.content[:200]
 
-    # # item_link is only needed if NewsItem has no get_absolute_url method.
-    # def item_link(self, item: Article):
-    #     return reverse('blogapp:article', kwargs={'pk': item.pk})
